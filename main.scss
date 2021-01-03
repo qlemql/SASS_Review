@@ -1,0 +1,41 @@
+.container {
+  $size: 100px;
+  .item {
+    width: $size * 3;
+    height: $size * 3;
+    background-color: tomato;
+  }
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  &.active {
+    color: red;
+  }
+}
+
+.fs {
+  &-small {
+    font-size: 14px;
+  }
+  &-medium {
+    font-size: 16px;
+  }
+  &-large {
+    font-size: 18px;
+  }
+}
+
+.list {
+  $w: 100px;
+  $h: 50px;
+  li {
+    width: $w;
+    height: $h;
+  }
+  @at-root box {
+    width: $w;
+    height: $h;
+  }
+}
